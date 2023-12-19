@@ -1,0 +1,17 @@
+@import '../styles/variables.scss';
+
+.container {
+
+    &__items {}
+
+    &__items__text {
+        color: $red;
+    }
+
+    &__items__input {
+        &__input-name {
+            color: $red;
+        }
+    }
+
+}
