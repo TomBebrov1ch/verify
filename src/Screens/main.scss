@@ -1,17 +1,45 @@
 @import '../styles/variables.scss';
 
 .container {
+    width: 86.6%;
+    margin: auto;
 
-    &__items {}
+    &__items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: clamp(75px, 35.046vw, 300px);
+    }
 
     &__items__text {
-        color: $red;
+        color: $sectext;
+        font-family: 'Montserrat', sans-serif;
+        font-size: clamp(15px, 7.0092vw, 60px);
     }
 
     &__items__input {
-        &__input-name {
-            color: $red;
-        }
+        margin-top: clamp(25px, 11.681999999999999vw, 100px);
     }
 
+    &__items__input-r {
+        padding: clamp(7.5px, 3.5046vw, 30px);
+        border-radius: 6px;
+        background-color: $text;
+        color: black;
+        font-family: 'Kanit', sans-serif;
+        font-size: clamp(7.5px, 3.5046vw, 30px);
+        border: 1px solid $sectext;
+        margin-top: clamp(3.5px, 1.6354799999999998vw, 14px);
+    }
+
+    &__items__button {
+        padding: clamp(7.5px, 3.5046vw, 30px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .main-mob {
+        display: none;
+    }
 }

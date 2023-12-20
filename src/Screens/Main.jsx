@@ -1,5 +1,7 @@
 import React from 'react'
 import Inputs from '../Inputs/Inputs.jsx'
+import Pass from '../Inputs/Pass.jsx'
+import Reg from '../Buttons/Reg.jsx'
 
 import '../Screens/main.scss'
 
@@ -13,10 +15,11 @@ const Main = () => {
                         <h1>СОСО</h1>
                     </div>
                     <div className="container__items__input">
-                        <Inputs className="container__items__input-name" placeholder='Введите имя' />
-                        <Inputs className="container__items__input-surname" placeholder='Введите фамилию' />
-                        <Inputs className="container__items__input-pass" placeholder='Введите пароль' />
-                        <Inputs className="container__items__input-rep" placeholder='Повторно введите пароль' />
+                        <Inputs className="container__items__input-r" placeholder='Введите имя' />
+                        <Inputs className="container__items__input-r" placeholder='Введите фамилию' />
+                        <Pass className="container__items__input-r" placeholder='Введите пароль' />
+                        <Pass className="container__items__input-r" placeholder='Повторно введите пароль' />
+                        <Reg className="container__items__button" Зарегистрироваться />
                     </div>
                 </div>
             </div>
