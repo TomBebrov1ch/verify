@@ -15,7 +15,12 @@
     &__items__text {
         color: $sectext;
         font-family: 'Montserrat', sans-serif;
-        font-size: clamp(15px, 7.0092vw, 60px);
+        font-size: clamp(7.5px, 3.5046vw, 30px);
+        background-color: $text;
+        padding-left: clamp(7.5px, 3.5046vw, 30px);
+        padding-right: clamp(7.5px, 3.5046vw, 30px);
+        border: none;
+        border-radius: 6px;
     }
 
     &__items__input {
@@ -35,6 +40,9 @@
 
     &__items__button {
         padding: clamp(7.5px, 3.5046vw, 30px);
+        background-color: $text;
+        border: none;
+        border-radius: 6px;
     }
 }
 
